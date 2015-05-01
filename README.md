@@ -20,6 +20,8 @@ Install Java and Maven. Then import the area you want to do map-matching on:
 ```bash
 ./map-matching.sh action=import datasource=./some-dir/osm-file.pbf [vehicle=car]
 ```
+The parameter vehicle defines the routing profile. Other options are `vehicle=bike` or `vehicle=foot`. If you have already imported a datasource with a specific profile, you first need to remove the folder graph-cache in your map-matching-master directory.
+
 
 and then do these matches:
 ```bash
